@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #454545;
+    color: #DADADA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+}
+
+svg {
+    fill: #DADADA;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 0.75em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    color: white;
+}
+
+.navbar li:hover svg {
+    fill: white;
+}
