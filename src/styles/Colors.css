@@ -1,6 +1,6 @@
-.homepage-wrapper {
-    color: #F5F5F7;
-    background-color: #000000;
+.colors-wrapper {
+    color: #1D1D1F;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,9 +24,9 @@
     font-size: 1.7em;
 }
 
-.homepage-wrapper img {
-    height: 100%;
-    width: auto;
+.colors-wrapper img {
+    height: 95%;
+    object-fit: cover;
 }
 
 .image-wrapper {

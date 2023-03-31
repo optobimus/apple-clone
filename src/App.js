@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Nav from "./components/Nav";
 import Homepage from './components/Homepage';
 import Banner from './components/Banner';
+import Colors from './components/Colors';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <>
             <Banner/>
             <Homepage/>
+            <Colors/>
           </>
         }/>
       </Routes>
