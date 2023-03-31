@@ -1,7 +1,7 @@
 import "../styles/Nav.css"
 
 
-function App() {
+function Nav() {
   return (
     <nav className="navbar">
         <ul>
@@ -26,4 +26,4 @@ function App() {
   )
 }
 
-export default App;
+export default Nav;

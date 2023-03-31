@@ -1,0 +1,17 @@
+.shop-iphone-link {
+    cursor: pointer;
+    color: #297ED3;
+}
+
+.shop-iphone-link:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.93em;
+}
