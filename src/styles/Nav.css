@@ -5,6 +5,16 @@
     align-items: center;
     justify-content: center;
     height: 44px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: opacity 0.5s, backdrop-filer 0.5s, background-color 0.5s;
+}
+
+.navbar.scrolled {
+    opacity: 0.95;
+    backdrop-filter: blur(10px);
+    background-color: rgba(18, 18, 18, 0.9);
 }
 
 svg {
