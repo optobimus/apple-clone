@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 750px;
 }
 
 .copy-wrapper {
@@ -24,13 +24,14 @@
     font-size: 1.7em;
 }
 
+.homepage-wrapper .image-wrapper {
+    height: 550px;
+    margin-top: auto;
+}
+
 .homepage-wrapper img {
     height: 100%;
     width: auto;
-}
-
-.image-wrapper {
-    height: 500px;
 }
 
 .button-wrapper {
