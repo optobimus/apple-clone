@@ -40,12 +40,12 @@
     align-items: center;
 }
 
-.iphone-hero-wrapper button {
+.buy-button {
     background-color: #0071e3;
     color: white;
     border: 0;
-    border-radius: 20px;
-    padding: 12px;
+    border-radius: 24px;
+    padding: 12px 20px;
     font-size: 0.9em;
     cursor: pointer;
 }
