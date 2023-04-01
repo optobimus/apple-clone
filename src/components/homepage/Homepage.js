@@ -1,13 +1,12 @@
-import img from "../static/iphone-14-colors.png";
-import "../styles/Colors.css"
+import img from "../../static/homepage.jpg";
+import "../../styles/Homepage.css"
 
-function Colors() {
+function Homepage() {
   return (
-    <div className="colors-wrapper">
+    <div className="homepage-wrapper">
         <div className="copy-wrapper">
-            <h1>iPhone 14</h1>
-            <h3>Two great sizes.</h3>
-            <h3>Now with a splash of yellow.</h3>
+            <h1>iPhone 14 Pro</h1>
+            <h3>Pro. Beyond.</h3>
             <div className="button-wrapper">
                 <a className="learn-more-link">Learn more &gt;</a>
                 <a className="buy-link">Buy &gt;</a>
@@ -20,4 +19,4 @@ function Colors() {
   )
 }
 
-export default Colors;
+export default Homepage;

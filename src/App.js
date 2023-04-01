@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import { Route, Routes } from 'react-router-dom';
 import Nav from "./components/Nav";
-import Homepage from './components/Homepage';
-import Banner from './components/Banner';
-import Colors from './components/Colors';
-import Watchpreview from './components/Watchpreview';
+import Homepage from './components/homepage/Homepage';
+import Banner from './components/homepage/Banner';
+import Colors from './components/homepage/Colors';
+import Watchpreview from './components/homepage/Watchpreview';
+import Footer from "./components/Footer";
+
+import IPhoneHero from './components/iphone/IPhoneHero';
 
 function App() {
   return (
@@ -19,7 +22,13 @@ function App() {
             <Watchpreview/>
           </>
         }/>
+        <Route path="/iphone" element={
+          <>
+            <IPhoneHero/>
+          </>
+        }/>
       </Routes>
+      <Footer/>
     </>
   )
 }

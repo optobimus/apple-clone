@@ -1,6 +1,6 @@
-import img from "../static/apple-watch.png";
-import logo from "../static/logo.png";
-import "../styles/Watchpreview.css"
+import img from "../../static/apple-watch.png";
+import logo from "../../static/logo.png";
+import "../../styles/Watchpreview.css"
 
 function Watchpreview() {
   return (
