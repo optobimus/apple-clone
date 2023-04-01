@@ -62,9 +62,10 @@ video {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    width: 100%;
 }
 
-.airpods-3rd-gen {
+.airpods-3rd-gen, .airpods-2nd-gen, .airpods-max {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -73,7 +74,7 @@ video {
     background-color: #FFFFFF;
 }
 
-.airpods-3rd-gen .airpods-text {
+.airpods-3rd-gen .airpods-text, .airpods-2nd-gen .airpods-text, .airpods-max .airpods-text {
     color: black;
 }
 
@@ -82,4 +83,40 @@ video {
     width: 100%;
     object-fit: cover;
     object-position: center 300%;
+}
+
+.airpods-2nd-gen, .airpods-max { 
+    display: flex;
+    justify-content: center;
+}
+
+.second-airpods-image-wrapper {
+    display: flex;
+    gap: 150px;
+}
+
+#left-airpod {
+    margin-top: 80px;
+    height: 120%;
+    width: auto;
+}
+
+#right-airpod {
+    height: 120%;
+    margin-top: 240px;
+}
+
+.airpods-max {
+    align-items: center;
+    height: 746px;
+}
+
+.airpods-max h1 {
+    font-size: 12em;
+}
+
+.airpods-max img {
+    height: 80%;
+    margin-bottom: 50px;
+    z-index: 999;
 }
