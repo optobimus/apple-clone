@@ -9,6 +9,10 @@ import Footer from "./components/Footer";
 
 import IPhoneBanner from './components/iphone/IPhoneBanner';
 import IPhoneHero from './components/iphone/IPhoneHero';
+import IPhoneMid from './components/iphone/IPhoneMid';
+
+import Airpodsbanner from './components/airpods/Airpodsbanner';
+import AirpodsMain from './components/airpods/AirpodsMain';
 
 function App() {
   return (
@@ -27,6 +31,13 @@ function App() {
           <>
             <IPhoneBanner/>
             <IPhoneHero/>
+            <IPhoneMid/>
+          </>
+        }/>
+        <Route path="/airpods" element={
+          <>
+            <Airpodsbanner/>
+            <AirpodsMain/>
           </>
         }/>
       </Routes>

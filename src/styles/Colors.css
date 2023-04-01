@@ -33,14 +33,6 @@
     height: 520px;
 }
 
-.button-wrapper {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    color: #2997FF;
-    font-size: 1.2em;
-}
-
 .learn-more-link, .buy-link {
     cursor: pointer;
 }

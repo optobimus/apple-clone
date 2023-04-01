@@ -24,7 +24,7 @@ function Nav() {
             <li>iPad</li>
             <li><Link to="/iphone">iPhone</Link></li>
             <li>Watch</li>
-            <li>Airpods</li>
+            <li><Link to="/airpods">Airpods</Link></li>
             <li>TV & Home</li>
             <li>Entertainment</li>
             <li>Accessories</li>
