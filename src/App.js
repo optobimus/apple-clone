@@ -7,6 +7,7 @@ import Colors from './components/homepage/Colors';
 import Watchpreview from './components/homepage/Watchpreview';
 import Footer from "./components/Footer";
 
+import IPhoneBanner from './components/iphone/IPhoneBanner';
 import IPhoneHero from './components/iphone/IPhoneHero';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         }/>
         <Route path="/iphone" element={
           <>
+            <IPhoneBanner/>
             <IPhoneHero/>
           </>
         }/>
