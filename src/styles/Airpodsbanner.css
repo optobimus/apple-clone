@@ -1,0 +1,38 @@
+
+.airpods-banner {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.93em;
+    background-color: #F8F8F9;
+    transition: background-color 4s ease-in-out;
+    transition: color 1s ease-in-out;
+    animation: slide-down 1s ease-in-out;
+}
+
+.learn-more-link {
+    color: #297ED3;
+    transform: color 4s ease-in-out;
+}
+.airpods-banner.change {
+    background-color: #297ED3;
+    color: white;
+    transition: background-color 4s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+
+.learn-more-link.change {
+    color: white;
+    transition: color 4s ease-in-out;
+}
+
+@keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
