@@ -11,7 +11,7 @@
     animation: slide-down 0.5s ease-in-out;
 }
 
-.learn-more-link {
+.airpods-banner .learn-more-link {
     color: #297ED3;
     transition: color 1s ease-in-out 1s;
 }

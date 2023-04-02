@@ -21,15 +21,16 @@
     transition: opacity 0.5s ease-in-out 2s;
 }
 
-.cart-preview ~ *:not(.cart-preview):not(:first-child) {
+.cart-preview ~ *:not(.cart-preview):not(:first-child):not(.iphone-banner):not(.airpods-banner) {
     filter: blur(0);
     transition: filter 0.5s ease-in-out;
 }
 
-.cart-preview.active ~ *:not(.cart-preview):not(:first-child) {
+.cart-preview.active ~ *:not(.cart-preview):not(:first-child):not(.iphone-banner):not(.airpods-banner) {
     filter: blur(5px);
     transition: filter 0.5s ease-in-out 0.2s;
-}
+  }
+  
   
 
 .cart-preview a {
