@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <Nav onClickBag={clickBagHandler}/>
+      <Nav onClickBag={clickBagHandler} itemsInCart={items.length}/>
       <CartPreview items={items}/>
       <Routes>
         <Route path="/" element={
