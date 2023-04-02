@@ -1,7 +1,13 @@
 import img from "../../static/iphone-14-colors.png";
 import "../../styles/IPhoneHero.css"
+import cartImage from "../../static/iphone-14-cart.png";
 
-function IPhoneHero() {
+function IPhoneHero({ clickHandler }) {
+
+  const handleBuyClick = () => {
+    clickHandler({ name: "iPhone 14", image: cartImage, price: 849});
+  }
+
   return (
     <div className="iphone-hero-wrapper">
         <div className="copy-wrapper">
@@ -11,7 +17,7 @@ function IPhoneHero() {
             <h1>Now with a splash of yellow.</h1>
             <h3>From $799 or $33.29/mo. for 24 mo. before trade-in²</h3>
             <div className="button-wrapper">
-              <button className="buy-button">Buy</button>
+              <button onClick={handleBuyClick} className="buy-button">Buy</button>
               <a className="learn-more-link">Learn more &gt;</a>
                 
             </div>

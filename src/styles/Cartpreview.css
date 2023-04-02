@@ -1,24 +1,25 @@
 .cart-preview {
     display: none;
     flex-direction: column;
-    padding: 40px 25%;
+    padding: 60px 25% 80px;
     background-color: #161617;
     color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     animation: slide-down 0.5s ease-in-out, slide-up 0.5 ease-in-out;
     z-index: 998;
+    gap: 30px;
 
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out 2s;
 }
 
 .cart-preview.active {
     display: flex;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out 2s;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .cart-preview ~ *:not(.cart-preview):not(:first-child):not(.iphone-banner):not(.airpods-banner) {
@@ -38,6 +39,40 @@
     text-decoration: underline;
 }
 
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cart-preview ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-preview li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-preview p {
+    color: darkgray;
+}
+
+.cart-preview svg {
+    fill: darkgray;
+}
+
+.bag-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 @keyframes slide-down {
     0% {

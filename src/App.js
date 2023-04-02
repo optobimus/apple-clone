@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+
+import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Nav from "./components/Nav";
 import Homepage from './components/homepage/Homepage';
@@ -6,7 +8,7 @@ import Banner from './components/homepage/Banner';
 import Colors from './components/homepage/Colors';
 import Watchpreview from './components/homepage/Watchpreview';
 import Footer from "./components/Footer";
-import CartPreview from "./components/CartPreview";
+import CartPreview from "./components/cart/CartPreview";
 
 import IPhoneBanner from './components/iphone/IPhoneBanner';
 import IPhoneHero from './components/iphone/IPhoneHero';
@@ -16,6 +18,8 @@ import Airpodsbanner from './components/airpods/Airpodsbanner';
 import AirpodsMain from './components/airpods/AirpodsMain';
 
 function App() {
+
+  const [items, setItems] = useState([]);
 
   const clickBagHandler = (event) => {
     event.preventDefault();
@@ -30,10 +34,14 @@ function App() {
     }
   }
 
+  const handleAddToCart = (item) => {
+    setItems(prevItems => [...prevItems, item]);
+  }
+
   return (
     <>
       <Nav onClickBag={clickBagHandler}/>
-      <CartPreview/>
+      <CartPreview items={items}/>
       <Routes>
         <Route path="/" element={
           <>
@@ -46,14 +54,14 @@ function App() {
         <Route path="/iphone" element={
           <>
             <IPhoneBanner/>
-            <IPhoneHero/>
-            <IPhoneMid/>
+            <IPhoneHero clickHandler={handleAddToCart}/>
+            <IPhoneMid clickHandler={handleAddToCart}/>
           </>
         }/>
         <Route path="/airpods" element={
           <>
             <Airpodsbanner/>
-            <AirpodsMain/>
+            <AirpodsMain clickHandler={handleAddToCart}/>
           </>
         }/>
       </Routes>
