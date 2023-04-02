@@ -6,6 +6,7 @@ import Banner from './components/homepage/Banner';
 import Colors from './components/homepage/Colors';
 import Watchpreview from './components/homepage/Watchpreview';
 import Footer from "./components/Footer";
+import CartPreview from "./components/CartPreview";
 
 import IPhoneBanner from './components/iphone/IPhoneBanner';
 import IPhoneHero from './components/iphone/IPhoneHero';
@@ -15,9 +16,24 @@ import Airpodsbanner from './components/airpods/Airpodsbanner';
 import AirpodsMain from './components/airpods/AirpodsMain';
 
 function App() {
+
+  const clickBagHandler = (event) => {
+    event.preventDefault();
+    const bagPreview = document.querySelector(".cart-preview");
+    const nav = document.querySelector(".navbar");
+    if (bagPreview?.classList.contains("active")) {
+      bagPreview.classList.remove("active");
+      nav.classList.remove("active-cart");
+    } else {
+      bagPreview?.classList.add("active");
+      nav.classList.add("active-cart");
+    }
+  }
+
   return (
     <>
-      <Nav/>
+      <Nav onClickBag={clickBagHandler}/>
+      <CartPreview/>
       <Routes>
         <Route path="/" element={
           <>
