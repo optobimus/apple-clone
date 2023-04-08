@@ -3,9 +3,10 @@ import CartItem from "./CartItem";
 import uniqid from "uniqid";
 import { Link } from "react-router-dom";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function CartPreview({ items }) {
+  const [active, setActive] = useState(true);
 
   /*useEffect(() => {
     function handleClickOutside(event) {
@@ -21,10 +22,33 @@ function CartPreview({ items }) {
     };
   });*/
 
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest(".cart-preview") &&
+          !event.target.closest(".nav-bag-wrapper") ||
+          event.target === document.querySelector(".review-bag-button")) {
+         // Click is outside the component
+        closeBag();
+        console.log("Clicked outside the cart preview");
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   const closeBag = (event) => {
-    event.preventDefault();
-    const bagPreview = document.querySelector(".cart-preview");
-    bagPreview.classList.remove("active");
+    event?.preventDefault();
+    if (document.querySelector(".cart-preview").classList.contains("active")) {
+      const bagPreview = document.querySelector(".cart-preview");
+      bagPreview.classList.remove("active");
+      setActive(false);
+    }
   }
 
   const renderItems = () => {
