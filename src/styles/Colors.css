@@ -25,11 +25,14 @@
 }
 
 .colors-wrapper img {
-    height: 95%;
-    object-fit: cover;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
 .colors-wrapper .image-wrapper {
+    display: flex;
+    justify-content: center;
     height: 520px;
 }
 
@@ -40,3 +43,30 @@
 .learn-more-link:hover, .buy-link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .colors-wrapper {
+      height: auto;
+      padding: 50px 20px;
+    }
+    
+    .copy-wrapper h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+    
+    .copy-wrapper h3 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+    
+    .colors-wrapper img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+    
+    .colors-wrapper .image-wrapper {
+      height: auto;
+    }
+  }

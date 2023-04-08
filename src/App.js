@@ -16,6 +16,8 @@ import IPhoneMid from './components/iphone/IPhoneMid';
 
 import Airpodsbanner from './components/airpods/Airpodsbanner';
 import AirpodsMain from './components/airpods/AirpodsMain';
+import CartReview from './components/cart/CartReview';
+
 
 function App() {
 
@@ -62,6 +64,11 @@ function App() {
           <>
             <Airpodsbanner/>
             <AirpodsMain clickHandler={handleAddToCart}/>
+          </>
+        }/>
+        <Route path="/bag" element={
+          <>
+            <CartReview items={items}/>
           </>
         }/>
       </Routes>

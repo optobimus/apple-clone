@@ -1,11 +1,12 @@
 import img from "../../static/iphone-14-colors.png";
 import "../../styles/IPhoneHero.css"
-import cartImage from "../../static/iphone-14-cart.png";
+import smallImage from "../../static/iphone-14-cart.png";
+import largeImage from "../../static/iphone-14-cart.jpeg";
 
 function IPhoneHero({ clickHandler }) {
 
   const handleBuyClick = () => {
-    clickHandler({ name: "iPhone 14", image: cartImage, price: 849});
+    clickHandler({ name: "iPhone 14", smallImage: smallImage, largeImage: largeImage, price: 849});
   }
 
   return (

@@ -46,3 +46,30 @@
     height: 480px;
     margin-top: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .watchpreview-wrapper {
+      height: auto;
+      padding: 50px 20px;
+    }
+    
+    .copy-wrapper h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+    
+    .copy-wrapper h3 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+    
+    .watchpreview-wrapper img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+    
+    .watchpreview-wrapper .image-wrapper {
+      height: auto;
+    }
+  }

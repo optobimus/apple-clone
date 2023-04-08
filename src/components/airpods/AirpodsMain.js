@@ -3,17 +3,22 @@ import thirdgen from "../../static/airpods_3rd_gen.jpg";
 import secondgenleft from "../../static/2nd_gen.png";
 import secondgenright from "../../static/2nd_gen_right.png";
 import airpodsmax from "../../static/airpods_max.png";
-import airpodsmaxcart from "../../static/airpods-max-cart.png";
-import airpodsprocart from "../../static/airpods-pro-cart.png";
-import airpodssecondcart from "../../static/airpods-2nd-cart.png";
-import airpodsthirdcart from "../../static/airpods-3rd-cart.png";
+import smallairpodsmaxcart from "../../static/airpods-max-cart.png";
+import smallairpodsprocart from "../../static/airpods-pro-cart.png";
+import smallairpodssecondcart from "../../static/airpods-2nd-cart.png";
+import smallairpodsthirdcart from "../../static/airpods-3rd-cart.png";
+
+import largeairpodsmaxcart from "../../static/airpods-max-cart.jpeg";
+import largeairpodsprocart from "../../static/airpods-pro-cart.jpeg";
+import largeairpodssecondcart from "../../static/airpods2-cart.jpeg";
+import largeairpodsthirdcart from "../../static/airpods3-cart.jpeg";
 
 import "../../styles/AirpodsMain.css"
 
 function AirpodsMain({ clickHandler }) {
 
-  const handleBuyClick = (name, image, price) => {
-    clickHandler({ name: name, image: image, price: price});
+  const handleBuyClick = (name, smallImage, largeImage, price) => {
+    clickHandler({ name: name, smallImage: smallImage, largeImage: largeImage, price: price});
   }
 
   return (
@@ -28,7 +33,7 @@ function AirpodsMain({ clickHandler }) {
             <h2>$249</h2>
         </div>
         <div className="button-wrapper">
-            <button onClick={() => handleBuyClick("Airpods Pro (2nd generation)", airpodsprocart, 249)} className="buy-button">Buy</button>
+            <button onClick={() => handleBuyClick("Airpods Pro (2nd generation)", smallairpodsprocart, largeairpodsprocart, 249)} className="buy-button">Buy</button>
             <a className="learn-more-link">Learn more &gt;</a>
         </div>
       </div>
@@ -42,7 +47,7 @@ function AirpodsMain({ clickHandler }) {
             <h2>From $169</h2>
         </div>
         <div className="button-wrapper">
-            <button onClick={() => handleBuyClick("Airpods (3rd generation) with Lightning Charging Case", airpodsthirdcart, 169)} className="buy-button">Buy</button>
+            <button onClick={() => handleBuyClick("Airpods (3rd generation) with Lightning Charging Case", smallairpodsthirdcart, largeairpodsthirdcart, 169)} className="buy-button">Buy</button>
             <a className="learn-more-link">Learn more &gt;</a>
         </div>
       </div>
@@ -59,7 +64,7 @@ function AirpodsMain({ clickHandler }) {
             <h2>$129</h2>
         </div>
         <div className="button-wrapper">
-            <button onClick={() => handleBuyClick("Airpods (2nd generation)", airpodssecondcart, 129)} className="buy-button">Buy</button>
+            <button onClick={() => handleBuyClick("Airpods (2nd generation)", smallairpodssecondcart, largeairpodssecondcart, 129)} className="buy-button">Buy</button>
             <a className="learn-more-link">Learn more &gt;</a>
         </div>
       </div>
@@ -71,7 +76,7 @@ function AirpodsMain({ clickHandler }) {
             <h2>$549</h2>
         </div>
         <div className="button-wrapper">
-            <button onClick={() => handleBuyClick("Airpods Max", airpodsmaxcart, 549)} className="buy-button">Buy</button>
+            <button onClick={() => handleBuyClick("Airpods Max", smallairpodsmaxcart, largeairpodsmaxcart, 549)} className="buy-button">Buy</button>
             <a className="learn-more-link">Learn more &gt;</a>
         </div>
       </div>

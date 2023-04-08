@@ -1,0 +1,175 @@
+.cart-review {
+    display: flex;
+    flex-direction: column;
+    padding: 60px max(40px, 25%);
+}
+
+.cart-review a {
+    cursor: pointer;
+    color: #076ACD;
+}
+
+.cart-review a:hover {
+    text-decoration: underline;
+}
+
+.cart-review h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.monthly-card img {
+    height: 15px;
+    width: auto;
+    margin-bottom: 18px;
+}
+
+.monthly-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F5F5F7;
+    border-radius: 15px;
+    padding: 10px 100px;
+    margin: 40px 0;
+    font-size: 0.9em;
+}
+
+.cart-review-item {
+    display: flex;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+.cart-review-item p {
+    font-size: 0.9em;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    margin-top: 1em;
+    justify-content: space-between;
+    height: 10em;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.info-header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.item-info h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.info-header-1, .info-header-2, .info-header-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cart-review-item img {
+    height: 200px;
+    width: auto;
+}
+
+.info-header-1 {
+    gap: 1em;
+}
+
+.info-header-2 {
+    height: 100%;
+}
+
+.info-header-3 {
+    gap: 1em;
+    align-items: flex-end;
+}
+
+.info-hero {
+    margin-top: 1.5em;
+    display: flex;
+    gap: 0.5em;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1.5em;
+}
+
+.info-hero p {
+    margin: 0.5em 0;
+}
+
+.hero-logo img {
+    height: 18px;
+    width: auto;
+}
+
+.hero-text-learn-more {
+    font-size: 0.9em;
+}
+
+.info-mid {
+    margin-top: 1.5em;
+    display: flex;
+    gap: 0.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.add-link {
+    margin-left: auto;
+}
+
+.info-mid svg, .info-low svg {
+    fill: gray;
+}
+
+.info-low {
+    margin-top: 1.5em;
+}
+
+span {
+    transform: rotate(90deg);
+}
+
+.info-low-upper, .info-low-lower {
+    display: flex;
+    gap: 0.5em;
+}
+
+.info-low-lower {
+    gap: 7em;
+}
+
+.info-low-upper p, .info-low-lower p {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1d1d1f;
+    height: 1.41176rem;
+    margin-bottom: 0;
+    padding: 0 0 0 5px;
+    border: 0;
+    display: inline-block;
+    background-color: transparent;
+}
+

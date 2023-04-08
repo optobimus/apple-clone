@@ -74,6 +74,23 @@
     gap: 20px;
 }
 
+.bag-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-bag-button {
+    background-color: #0071e3;
+    color: white;
+    border: 0;
+    border-radius: 24px;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
 @keyframes slide-down {
     0% {
       transform: translateY(-100%);

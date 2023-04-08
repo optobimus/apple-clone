@@ -5,7 +5,7 @@ import uniqid from "uniqid";
 function CartItem({ name, image }) {
   return (
     <div className="cart-item">
-        <img src={image} alt="product-image" key={uniqid()}></img>
+        <img src={image} alt="product" key={uniqid()}></img>
         {name}
     </div>
   )

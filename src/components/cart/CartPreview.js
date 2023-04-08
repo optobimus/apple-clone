@@ -1,11 +1,35 @@
 import "../../styles/Cartpreview.css";
 import CartItem from "./CartItem";
+import uniqid from "uniqid";
+import { Link } from "react-router-dom";
+
+import { useEffect } from "react";
 
 function CartPreview({ items }) {
 
+  /*useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest(".cart-preview")) {
+        closeBag();
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  });*/
+
+  const closeBag = (event) => {
+    event.preventDefault();
+    const bagPreview = document.querySelector(".cart-preview");
+    bagPreview.classList.remove("active");
+  }
+
   const renderItems = () => {
       return items.map(item => (
-        <CartItem name={item.name} image={item.image}/>
+        <CartItem key={uniqid()} name={item.name} image={item.smallImage}/>
       ));
   }
 
@@ -20,7 +44,10 @@ function CartPreview({ items }) {
     } else {
       return(
         <div className="bag">
-          <h1>Bag</h1>
+          <div className="bag-header">
+            <h1>Bag</h1>
+            <Link to="/bag"><button className="review-bag-button">Review Bag</button></Link>
+          </div>
           <div className="bag-items">
             {renderItems()}
           </div>

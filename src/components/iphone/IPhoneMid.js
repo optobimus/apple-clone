@@ -1,11 +1,12 @@
 import img from "../../static/homepage.jpg";
 import "../../styles/IPhoneMid.css"
-import cartImage from "../../static/iphone-14-pro-cart.png";
+import smallImage from "../../static/iphone-14-pro-cart.png";
+import largeImage from "../../static/iphone-14-pro-cart.jpeg";
 
 function IPhoneMid({ clickHandler }) {
 
   const handleBuyClick = () => {
-    clickHandler({ name: "iPhone 14 Pro", image: cartImage, price: 1249});
+    clickHandler({ name: "iPhone 14 Pro", smallImage: smallImage, largeImage: largeImage, price: 1249});
   }
   return (
     <div className="iphone-mid-wrapper">
