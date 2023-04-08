@@ -4,11 +4,11 @@ import uniqid from "uniqid";
 import "../../styles/CartReview.css";
 import CartReviewItem from "./CartReviewItem";
 
-function CartReview({ items }) {
+function CartReview({ items, removeItem }) {
 
     const renderItems = () => {
         return items.map(item => (
-          <CartReviewItem key={uniqid()} item={item}/>
+          <CartReviewItem key={uniqid()} item={item} removeItem={removeItem}/>
         ));
     }
   return (

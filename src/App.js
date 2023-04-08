@@ -40,6 +40,10 @@ function App() {
     setItems(prevItems => [...prevItems, item]);
   }
 
+  const handleRemoveItem = (itemToRemove) => {
+    setItems(prevItems => prevItems.filter(item => item !== itemToRemove));
+  }
+
   return (
     <>
       <Nav onClickBag={clickBagHandler} itemsInCart={items.length}/>
@@ -68,7 +72,7 @@ function App() {
         }/>
         <Route path="/bag" element={
           <>
-            <CartReview items={items}/>
+            <CartReview items={items} removeItem={handleRemoveItem}/>
           </>
         }/>
       </Routes>

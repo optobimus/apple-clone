@@ -165,11 +165,21 @@ select {
     letter-spacing: .009em;
     font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #1d1d1f;
-    height: 1.41176rem;
+    height: 2rem;
+    width: 3rem;
     margin-bottom: 0;
     padding: 0 0 0 5px;
     border: 0;
+    border-radius: 15px;
     display: inline-block;
     background-color: transparent;
 }
 
+select:focus {
+    border-color: #076ACD;
+    border: 3px solid #076ACD;
+}
+
+select:focus-visible {
+    border-color: #076ACD;
+}
