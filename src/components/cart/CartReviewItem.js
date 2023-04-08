@@ -50,8 +50,8 @@ function CartReviewItem({ item, removeItem }) {
                 </select>
               </div>
               <div className="info-header-3">
-                <h2>${Number(item.price*amount).toFixed(2)}</h2>
-                <p>${(item.price*amount/6).toFixed(2)}/mo.</p>
+                <h2>{Number(item.price*amount).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</h2>
+                <p>{(item.price*amount/6).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}/mo.</p>
                 <a onClick={handleRemove}>Remove</a>
               </div>
             </div>
@@ -60,7 +60,7 @@ function CartReviewItem({ item, removeItem }) {
                 <img width="400" height="400" alt="" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/APPLECARE-plus_ICON?" srcset="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/APPLECARE-plus_ICON?, https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/APPLECARE-plus_ICON? 2x" aria-hidden="true"/>
               </div>
               <div className="hero-text">
-                  <h3>Add AppleCare+ for {item.name} for ${(item.price*amount/10).toFixed(2)}</h3>
+                  <h3>Add AppleCare+ for {item.name} for {(item.price*amount/8).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</h3>
                   <p>Get up to two years of unlimited repairs for accidental damage protection and additional tech support</p>
                   <a className="hero-text-learn-more">Learn more &gt;</a>
                 </div>
