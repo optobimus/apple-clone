@@ -50,7 +50,7 @@ function Nav({ onClickBag, itemsInCart }) {
                     </a>
                     <svg onClick={onClickBag} id="cart-circle" width="16" height="16">
                         <circle cx="8" cy="8" r="8" fill="#FFFFFF"/>
-                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#454545" font-size="12">{itemsInCart}</text>
+                        <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="#454545" fontSize="12">{itemsInCart}</text>
                     </svg>
                 </div>
 

@@ -1,7 +1,26 @@
 
 import "../../styles/CartReview.css"
+import { useState, useEffect } from "react";
 
 function CartReviewItem({ item }) {
+
+  const [itemSelector, setItemSelector] = useState(null);
+  const [amount, setAmount] = useState(1);
+
+  useEffect(() => {
+    getAmount();
+  });
+
+  const getAmount = () => {
+    const amountSelectors = document.querySelectorAll(".item-select");
+    amountSelectors.forEach(selector => {
+      if(selector.parentNode.previousSibling.firstChild.textContent === item.name) {
+        setItemSelector(selector);
+      }
+    });
+    setAmount(itemSelector?.value);
+  }
+
   return (
     <div className="cart-review-item">
         <img className="cart-image-large" src={item.largeImage}></img>
@@ -12,7 +31,7 @@ function CartReviewItem({ item }) {
                 <p>Pay 0% APR for 6 months:</p>
               </div>
               <div className="info-header-2">
-                <select className="item-select">
+                <select className="item-select" onChange={getAmount}>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -26,7 +45,7 @@ function CartReviewItem({ item }) {
                 </select>
               </div>
               <div className="info-header-3">
-                <h2>${item.price}</h2>
+                <h2>${item.price*amount}</h2>
                 <p>${item.price/6}/mo.</p>
                 <a>Remove</a>
               </div>
