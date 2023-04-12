@@ -14,7 +14,7 @@ function CartReview({ items, removeItem, changeAmount }) {
 
   const getSum = () => {
     return items.reduce((total, item) => {
-      return total + item.price;
+      return total + item.price*item.amount;
     }, 0);
   }
     

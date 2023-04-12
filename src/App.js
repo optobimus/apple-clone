@@ -53,8 +53,14 @@ function App() {
     setItems(prevItems => prevItems.filter(item => item !== itemToRemove));
   }
 
-  const handleChangeCartAmount = (item, amount) => {
-
+  const handleChangeCartAmount = (itemToChangeAmount, amount) => {
+    const itemIndex = items.findIndex((item) => item.name === itemToChangeAmount.name);
+  
+    if (itemIndex !== -1) {
+      const updatedItems = [...items];
+      updatedItems[itemIndex].amount = Number(amount);
+      setItems(updatedItems);
+    }
   }
 
   const getItemsInCart = () => {

@@ -2,24 +2,21 @@
 import "../../styles/CartReview.css"
 import { useState, useEffect } from "react";
 
-function CartReviewItem({ item, removeItem }) {
+function CartReviewItem({ item, removeItem, changeAmount }) {
 
-  const [itemSelector, setItemSelector] = useState(null);
+  const [selectedAmount, setSelectedAmount] = useState(item.amount.toString());
   const [amount, setAmount] = useState(1);
 
   useEffect(() => {
-    getAmount();
-  });
-
-  const getAmount = () => {
-    const amountSelectors = document.querySelectorAll(".item-select");
-    amountSelectors.forEach(selector => {
-      if(selector.parentNode.previousSibling.firstChild.textContent === item.name) {
-        setItemSelector(selector);
-      }
-    });
-    setAmount(itemSelector?.value);
+    setAmount(item.amount);
+  }, [item.amount]);
+  
+  const handleChangeAmount = (event) => {
+    const selectedAmount = event.target.value;
+    setSelectedAmount(selectedAmount);
+    changeAmount(item, selectedAmount);
   }
+  
 
   const handleRemove = (event) => {
     removeItem(item);
@@ -36,7 +33,7 @@ function CartReviewItem({ item, removeItem }) {
                 <p>Pay 0% APR for 6 months:</p>
               </div>
               <div className="info-header-2">
-                <select className="item-select" onChange={getAmount}>
+                <select value={selectedAmount} className="item-select" onChange={handleChangeAmount}>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
