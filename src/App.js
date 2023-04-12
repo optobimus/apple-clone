@@ -36,17 +36,35 @@ function App() {
     }
   }
 
-  const handleAddToCart = (item) => {
-    setItems(prevItems => [...prevItems, item]);
-  }
+  const handleAddToCart = (itemToAdd) => {
+    const itemIndex = items.findIndex((item) => item.name === itemToAdd.name);
+  
+    if (itemIndex !== -1) {
+      const updatedItems = [...items];
+      updatedItems[itemIndex].amount += 1;
+      setItems(updatedItems);
+    } else {
+      setItems((prevItems) => [...prevItems, { ...itemToAdd, amount: 1 }]);
+    }
+  };
+  
 
   const handleRemoveItem = (itemToRemove) => {
     setItems(prevItems => prevItems.filter(item => item !== itemToRemove));
   }
 
+  const handleChangeCartAmount = (item, amount) => {
+
+  }
+
+  const getItemsInCart = () => {
+    return items.reduce((total, item) => total + item.amount, 0);
+  };
+  
+
   return (
     <>
-      <Nav onClickBag={clickBagHandler} itemsInCart={items.length}/>
+      <Nav onClickBag={clickBagHandler} itemsInCart={getItemsInCart()}/>
       <CartPreview items={items}/>
       <Routes>
         <Route path="/" element={
@@ -72,7 +90,7 @@ function App() {
         }/>
         <Route path="/bag" element={
           <>
-            <CartReview items={items} removeItem={handleRemoveItem}/>
+            <CartReview items={items} removeItem={handleRemoveItem} changeAmount={handleChangeCartAmount}/>
           </>
         }/>
       </Routes>
