@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Apple Clone (shopping cart)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot from 2023-04-24 22-55-47](https://user-images.githubusercontent.com/113835194/234114987-4b60f53e-8018-46b4-b0b7-2e91618e974d.png)
 
-## Available Scripts
+## Short description
 
-In the project directory, you can run:
+A clone of the Apple.com website to implement shopping cart functionality with React
 
-### `npm start`
+## Showcase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can see images of the website below. The user starts on the landing page and can navigate to other pages using the navigation menu. For now, only the "iPhone" and "Airpods" pages are implemented. Items can be added to the cart by pressing the respecrive "Buy now" button. With a click on the cart icon, it will expand and allow to proceed to the checkout / review order page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+![Screenshot from 2023-04-24 22-58-58](https://user-images.githubusercontent.com/113835194/234115816-a4f65f9a-d236-4360-9165-9906d5f558f2.png)
+![Screenshot from 2023-04-24 22-59-27](https://user-images.githubusercontent.com/113835194/234115831-1bf1fbb9-75be-4ba2-85d6-e0486ce2d8a7.png)
+![Screenshot from 2023-04-24 22-59-36](https://user-images.githubusercontent.com/113835194/234115837-8292d931-8ce7-4f13-935f-53074ca65643.png)
+![Screenshot from 2023-04-24 22-59-50](https://user-images.githubusercontent.com/113835194/234115839-9c67ec0a-5f37-470b-8c1f-2e614ce8e32e.png)
+![Screenshot from 2023-04-24 23-00-00](https://user-images.githubusercontent.com/113835194/234115846-7797e155-d979-4d6c-9828-c54972d12621.png)
+![Screenshot from 2023-04-24 23-00-09](https://user-images.githubusercontent.com/113835194/234115851-4b24709a-fef0-424c-b504-b49120d01d09.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Motivation
 
-### `npm run build`
+My motivations in building this project were practicing and refining my React skills as well as learning React Router. I also find it very challenging and rewarding to try and mimic a pages appearance and animations.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Clean, expressive UI/UX
+  * Add different items to cart
+  * Change amount of items in cart
+  * Browse through the store
+  * Smooth banner animations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+  * React
+  * React Router Dom
+  * CSS
+  * Git
+  * ESLint
+  * Prettier
+  * Webpack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
