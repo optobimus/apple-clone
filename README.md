@@ -6,6 +6,10 @@
 
 A clone of the Apple.com website to implement shopping cart functionality with React
 
+## Demo
+
+🖥️ <a href="https://optobimus.github.io/apple-clone/">Live Demo</a>
+
 ## Showcase
 
 You can see images of the website below. The user starts on the landing page and can navigate to other pages using the navigation menu. For now, only the "iPhone" and "Airpods" pages are implemented. Items can be added to the cart by pressing the respecrive "Buy now" button. With a click on the cart icon, it will expand and allow to proceed to the checkout / review order page.
