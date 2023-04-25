@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apple-clone/static/css/main.b183163e.css",
-    "main.js": "/apple-clone/static/js/main.6d39f1aa.js",
+    "main.js": "/apple-clone/static/js/main.a9ac0b26.js",
     "static/media/airpods.mp4": "/apple-clone/static/media/airpods.bcc69f73e54ac00cee5c.mp4",
     "static/media/apple-watch.png": "/apple-clone/static/media/apple-watch.e438b668bd3a757181c7.png",
     "static/media/airpods_max.png": "/apple-clone/static/media/airpods_max.23b2f888dd018d0c0f91.png",
@@ -18,10 +18,10 @@
     "static/media/logo.svg": "/apple-clone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/apple-clone/index.html",
     "main.b183163e.css.map": "/apple-clone/static/css/main.b183163e.css.map",
-    "main.6d39f1aa.js.map": "/apple-clone/static/js/main.6d39f1aa.js.map"
+    "main.a9ac0b26.js.map": "/apple-clone/static/js/main.a9ac0b26.js.map"
   },
   "entrypoints": [
     "static/css/main.b183163e.css",
-    "static/js/main.6d39f1aa.js"
+    "static/js/main.a9ac0b26.js"
   ]
 }
