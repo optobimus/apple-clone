@@ -1,40 +1,44 @@
-# Apple Clone (shopping cart)
+# apple-clone-docker
 
-![Screenshot from 2023-04-24 22-58-58](https://user-images.githubusercontent.com/113835194/234115816-a4f65f9a-d236-4360-9165-9906d5f558f2.png)
+This project is a React shopping cart application inspired by Apple.com, prepared for Docker-based deployment.
 
-## Short description
+## Prerequisites for development
 
-A clone of the Apple.com website to implement shopping cart functionality with React
+Install:
 
-## Demo
+- [Node.js](https://nodejs.org/) 20 or newer
+- `npm` (comes with Node.js)
+- [Docker](https://docs.docker.com/get-docker/) (for container build/run)
 
-🖥️ <a href="https://optobimus.github.io/apple-clone/">Live Demo</a>
+## Build project
 
-## Showcase
+Install dependencies and build the production bundle:
 
-You can see images of the website below. The user starts on the landing page and can navigate to other pages using the navigation menu. For now, only the "iPhone" and "Airpods" pages are implemented. Items can be added to the cart by pressing the respecrive "Buy now" button. With a click on the cart icon, it will expand and allow to proceed to the checkout / review order page.
+```bash
+npm install
+npm run build
+```
 
-![ezgif com-optimize (1)](https://user-images.githubusercontent.com/113835194/234361084-a6a3e10b-1638-4fd4-9fa7-bf65070a5b28.gif)
+## Test project
 
-## Motivation
+Run tests with:
 
-My motivations in building this project were practicing and refining my React skills as well as learning React Router. I also find it very challenging and rewarding to try and mimic a pages appearance and animations.
+```bash
+npm test -- --watchAll=false
+```
 
-## Features
+## Execute project
 
-  * Clean, expressive UI/UX
-  * Add different items to cart
-  * Change amount of items in cart
-  * Browse through the store
-  * Smooth banner animations
+Run locally in development mode:
 
-## Technologies Used
+```bash
+npm start
+```
 
-  * React
-  * React Router Dom
-  * CSS
-  * Git
-  * ESLint
-  * Prettier
-  * Webpack
+Then open `http://localhost:3000`.
 
+## Environment variables
+
+The application accepts:
+
+- `PORT` to choose the local port for the app (default: `3000`)
